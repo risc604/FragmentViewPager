@@ -23,8 +23,8 @@ public class Moto360Fragment extends Fragment
         int resId = getArguments().getInt("resId");
         View layout = inflater.inflate(R.layout.moto360, null);
         ImageView imageView1 = (ImageView) layout.findViewById(R.id.imageView1);
-
         imageView1.setImageResource(resId);
+
         return layout;
     }
 }

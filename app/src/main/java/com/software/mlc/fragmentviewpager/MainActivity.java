@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity
 
         mAdapter = new Moto360FragmentPagerAdapter(getSupportFragmentManager(), Data.MOTO360);
         mPager = (ViewPager)findViewById(R.id.pager);
+        mPager.setAdapter(mAdapter);
+
         mIndicator = (CirclePageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(mPager);
 
